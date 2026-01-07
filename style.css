@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url("/images/img-1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 5px;
+}
+.content h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: #1f1c1c;
+    display: flex;
+    align-items: center;
+}
+.vertical-line{
+    width: 200px;
+    background-color: hsl(0, 0%, 100%);
+    height: 0.2px;
+}
+.content h3{
+    text-align: center;
+    margin-top: 35px;
+    line-height: 1;
+}
+.content h3 .sp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Courgette", cursive;
+    font-style: italic;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+.content h3 .main{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 90px;
+    font-weight: 100;
+    color: #2a2929;
+    line-height: 1;
+    margin-top: 0;
+}
+.content p{
+    color: #a49d9dbf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 18px;
+}
+.content button{
+    width: 130px;
+    height: 40px;
+    margin-top: 13%;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.content button::before {
+    content: "";
+    position: absolute;
+    top: -6px;   /* gap above */
+    left: -6px;  /* gap left */
+    right: -6px; /* gap right */
+    bottom: -6px;/* gap bottom */
+    border: 1px solid #7d7979; /* border color */
+    border-radius: 5px;    /* same as button */
+    z-index: -1;             /* behind button */
+}
+.content .para{
+    margin-top: 15px;
+    color: #242121;
+}
+.vertical-line1{
+     width: 90px;
+    background: #949191;
+    height: 0.2px;
+    margin-top: -9px;
+}
